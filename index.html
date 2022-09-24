@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SRTF</title>
+
+    <style>
+        #navbar {
+    overflow: hidden;
+    border-radius: 2%;
+    border: 0px;
+    background-color: rgb(76, 69, 137);
+  }
+
+    #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    #navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    }
+
+    #navbar a.active {
+    background-color: #011556;
+    color: white;
+    }
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="navbar" >
+        <a href="first.html">Home</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a class="active" href="">Calculate</a>
+      </div>
+    <header class="text-center" id="head">
+        <h1>Shortest Remaining Time First</h1>
+    </header>
+    <div id="aligning">
+        <label>Enter number of processes: </label>
+        <input type="number" name="" id="input"><br>
+        <button class="submit" id="submit">Submit</button>
+        <button class="submit" onClick="window.location.reload();">Reset</button>
+    </div>
+    <div id="info"></div>
+    <h4></h4>
+    <div class="text-center" id="gantvalues"></div>
+    <div class="text-center" id="gantt"></div>
+    <div class="" id="inputtable"></div>
+    <div class="" id="totalavg"></div>
+    <script src="./script1.js">
+    </script>
+</body>
+</html>

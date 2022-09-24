@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+    <style>
+    
+    @font-face {
+    font-family: menu;
+    src: url("./SmoochSans-VariableFont_wght.ttf");
+    }
+    </style> 
+    <style>
+        
+          body{
+            margin:0 ;
+            padding: 10px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        
+       <a class="active" href="first.html">Home</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="index.html">Calculate</a>
+        <a href="aboutus.html" >About Us</a>
+      </div>
+    <div id="main-div">
+        <h1>Shortest Remaining Time First Algorithm</h1>
+    </div>
+
+    
+
+
+<div class="intro">
+    <h2><center>INTRODUCTION</center></h2> <br>
+            <h2>The Preemptive version of Shortest Job First(SJF) scheduling is known as Shortest Remaining Time First (SRTF). </h2>
+
+                <h2>In SRTF, the processes are scheduled according to the shortest remaining time.</h2>
+      </div>
+    
+
+        <details>
+            <summary><h1>ADVANTAGES</h1></summary>
+            <p><h2>The main advantage of the SRTF algorithm is that it makes the processing of the jobs faster than the SJF algorithm, 
+                mentioned it’s overhead charges are not counted</h2></p>
+          </details>
+        
+
+          <details>
+            <summary><h1>DISADVANTAGES</h1></summary>
+            <p><h2>In SRTF, the context switching is done a lot more times than in SJF due to more consumption of the CPU's valuable time for processing.</h2>
+                <h2>The consumed time of CPU then adds up to its processing time and which then diminishes the advantage of fast processing of this algorithm.</h2></p>
+          </details>
+        
+                
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } 
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>

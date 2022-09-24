@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    @font-face {
+    font-family: menu;
+    src: url("./SmoochSans-VariableFont_wght.ttf");
+    }
+
+    #main-div{
+    border: 0px ;
+    border-radius: 5px;
+    background-color:rgba(81, 82, 82, 0.318);
+    width: 50%;
+    margin-left: 25%;
+    font-size:small;
+    
+    }
+    .info{
+        background-color: transparent;
+        width:100%;
+        font-size: larger;
+        border: 0px;
+        border-radius: 2px;
+        margin-top: 5%;
+    }
+
+    body {
+    font-family: 'Times New Roman', Times, serif;
+    background: repeating-radial-gradient(#B7CADB,white);
+    background-attachment: fixed;
+    }
+
+    #navbar {
+    overflow: hidden;
+    border-radius: 15%;
+    border: 0px;
+    background-color: rgb(76, 69, 137);
+    }
+
+    #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    #navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    }
+
+    #navbar a.active {
+    background-color: #011556;
+    color: white;
+    }
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    h1{
+    text-align: center;
+    font-size: 500%;
+    font-family: menu;
+    font-weight: 900;
+    color: #ffffff; 
+    letter-spacing: 5px; 
+    text-shadow: 2px 4px 4px black;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="first.html">Home</a>
+        <a class="active" href="tutorial.html">Tutorial</a>
+        <a href="index.html">Calculate</a>
+        <a href="https://youtu.be/hoN7_VMzw_g">Video</a>
+        <a href="https://www.studytonight.com/operating-system/shortest-remaining-time-first-scheduling-algorithm">Reference</a>
+      </div>
+    <div id="main-div">
+        <h1>Example:</h1>
+        
+    </div>
+<center>   <img src="p1.JPG" height="30%" width="30%">
+    </center><br><center>
+        <h2>Gantt Chart</h2>
+    <img src="p4.JPG"  height="30%" width="30%"></center>
+
+
+    <div class="info">
+<p><center>
+Process P1  is started at time 0, since it is the only process in  the queue Process P2 arrives at time 1. 
+The remaining time for process P1 (7 miliseconds) is larger than the time requiredby process P2(4 milliseconds)
+so process P1 is preempted and process P2  is scheduled
+
+<h3>Turn Around Time (TAT=CT-AT)</h3>
+<h3>Waiting Time(WT=TAT-BT)</h3>
+
+And 
+
+<h3>Response Time(RT)=FR(First Response)-AR(Arrival Time)</h3>
+
+<img src="p3.JPG" height="50%" width="50%">
+
+<h3>AVG Turn Around Time(ATAT) = 17+4+24+7 / 4 =13</h3>
+<h3>AVG Waiting Time(AWT) = 9+0+15+2 / 4 = 6.5</h3>
+</center>
+</p></div>
+
+>
+<center>
+    <h2>Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7O3EcvobP7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+</body>
+</html>

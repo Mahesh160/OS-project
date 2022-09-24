@@ -1,0 +1,102 @@
+#main-div{
+    border: 0px ;
+    border-radius: 5px;
+    background-color:rgba(77, 77, 77, 0.562);
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+    text-align: center;
+  
+}
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background: repeating-radial-gradient(#B7CADB,white);
+    background-attachment: fixed;
+    color: rgb(14, 11, 11);  
+  }
+
+
+  #navbar {
+    overflow: hidden;
+    border-radius: 2%;
+    border: 0px;
+    background-color: rgb(76, 69, 137);
+  }
+
+    #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    #navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    }
+
+    #navbar a.active {
+    background-color: #011556;
+    color: white;
+    }
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    h1
+    {
+       text-transform: uppercase;
+       letter-spacing: 5px;
+       font-family: menu;
+      background-image: linear-gradient(
+        -225deg,
+        #ffffff 0%,
+        #ff0000 29%,
+        #dd56d6 67%,
+        #ffffff 100%
+        
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: rgb(239, 231, 231);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+        font-size: 60px;
+        margin: 0;
+    }
+    
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+h1::first-letter {
+    font-size: 200%;
+    color: #ffffff;
+}
+
+.intro
+{
+    font-size: larger;
+    line-height: 25px;
+    color: black;
+
+}
+
+    
+
+
+      
+    
+    

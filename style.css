@@ -1,0 +1,153 @@
+@keyframes ganttspan {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
+.row {
+    margin: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: repeating-radial-gradient(#B7CADB,white);
+    background-attachment: fixed;
+    color: rgb(13, 6, 6);
+}
+
+#head{
+    color: black;
+    background-color: white;
+    font-family: 'Squada One', cursive;
+}
+
+
+
+#head h1{
+    padding: 3%;
+    font-size: 60px;
+}
+
+#input{
+    background-color: lightskyblue;
+    color: black;
+    width: 18%;
+    font-weight: bold;
+    border-radius: 10px;
+}
+hr {
+    /* height: 5px; */
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid gray;
+    opacity: 0.8;
+}
+h4 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#inputtable {
+    text-align: center;
+    /* width: 80vw; */
+}
+
+.submit{
+    margin-top: 1%;
+    size: 20px;
+    border-radius: 10%;
+}
+
+.submit:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+#aligning{
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+#ganttvalues {
+    animation: ganttspan 2s 5s;
+}
+
+#aligning label{
+    margin-right: 10px;
+}
+
+#inputtable{
+    margin: auto;
+    margin-top: 5%;
+}
+
+table{
+    border:5;
+    width: 40%; 
+    margin-left: 40%;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border-radius: 12px 12px 0 0;
+    }
+
+#info label, #submitAB{
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+#submitAB:hover{
+    background-color: lightblue;
+}
+
+#table td, #table th{
+    border: 2px solid white;
+}
+
+#totalavg{
+    background-color: white;
+    color: black;
+}
+
+#totalavg div{
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-right: 15px;
+    font-size: 28px;
+}
+
+#gantt span{
+    background-color: burlywood;
+    
+}
+.onhover {
+    transition: width 0.5s;
+    animation: ganttspan 5s;
+}
+.onhover:hover {
+    /* padding: 13px; */
+    width: 60px;
+    /* animation: gantt 2s; */
+}
+.gChart{
+    /* width: 50px; */
+    display: inline-block;
+    padding:10px;
+    width: 50px;
+    outline: 1px solid black;
+}
+
+.gChartValues{
+    padding: 0;
+    padding-right: 19px;
+    width: 50px;
+    margin-top: 20px;
+    outline: none;
+    animation: ganttspan 5s;
+}
+#table td:hover, th:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+

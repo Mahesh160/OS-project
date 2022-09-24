@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+    
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color:white
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.column{
+
+    width: 100%;
+    display: block;
+}
+h2 {
+    text-decoration: underline;
+  }
+}
+#navbar {
+    overflow: hidden;
+    border-radius: 2%;
+    border: 0px;
+    background-color: rgb(76, 69, 137);
+  }
+
+    #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    #navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    }
+
+    #navbar a.active {
+    background-color: #011556;
+    color: white;
+    }
+
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+</style>
+</head>
+<body>
+    <div id="navbar">
+        
+        <a href="first.html">Home</a>
+         <a href="tutorial.html">Tutorial</a>
+         <a href="index.html">Calculate</a>
+         <a  class="active" href="aboutus.html">About Us</a>
+       </div>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  
+</div>
+
+<h2 style="text-align:center" >Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Sharan" style="width:100%">
+      <div class="container">
+        <h2>Sharan Mavinkere</h2>
+        <p>PES1PG21CA170</p>
+        
+       
+        <p>sharanmavinkere@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Mahesh" style="width:100%">
+      <div class="container">
+        <h2>Mahesh M</h2>
+        <p>PES1PG21CA151</p>
+        
+        
+        <p>maheshaga16@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="row">
+    <div class="column">
+        <div class="card">
+        <img src="surya.jpeg" alt="Suryanarayana" style="width:30%">
+        <div class="container">
+            <h2>Suryanarayana S Upadhya</h2>
+            <p>PES1PG21CA173</p>
+                
+        
+            <p>suryanarayanasupadhya2000@gmail.com</p>
+         </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="ashirwad.jpg" alt="Ashirwad" style="width:30%"  >
+      <div class="container">
+        <h2>Ashirwad</h2>
+        <p>PES1PG21CA125</p>
+        
+        
+        <p>ashirwadbc1999@gmail.com</p>
+    
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+      if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+      } 
+      else {
+          navbar.classList.remove("sticky");
+      }
+  }
+</script>
+</body>
+</html>
